@@ -9,7 +9,6 @@
 </head>
 <body>
   <section class="container">
-    <!-- Result display section -->
     <div class="result_field">
         <!-- Container for user and BOT result images -->
         <div class="result_images">
@@ -20,16 +19,13 @@
                 <img id="compChoiceImg" src="{{ url_for('static', filename='images/rock.png') }}" alt="BOT's choice image" />
             </span>
         </div>
-        <!-- Display the game result message -->
         <div id="resultMessage" class="result">Let's Play!</div>
     </div>
 
-    <!-- Score display -->
     <div class="score">
         <p>User: <span id="userScore">0</span> | Bot: <span id="compScore">0</span></p>
     </div>
 
-    <!-- Options for user to choose from -->
     <div class="option_images">
         <span class="option_image" onclick="playGame('R')">
             <img src="{{ url_for('static', filename='images/rock.png') }}" alt="Rock image" />
@@ -45,7 +41,6 @@
         </span>
     </div>
 
-    <!-- Control buttons -->
     <div class="controls">
         <button onclick="startGame()" class="button">Start</button>
         <button onclick="stopGame()" class="button">Stop</button>
